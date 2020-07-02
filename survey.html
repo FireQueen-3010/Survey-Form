@@ -1,0 +1,37 @@
+<html>
+  <main>
+    <link rel="stylesheet" type="text/css" href="surveyform.css">
+      <h1 id="title">Survey: Rent a friend</h1>
+    <p id="description">This recorded form will help us develop a talking, personalised bot which could be rented. <br> Thank you for your time!</p>
+    <form id="survey-form"><label for="Name" id="name-label">Name:</label><br><input id="name" required type="text" placeholder="Enter yor full name"><br><br><label for="Email-address"id="email-label">Email:</label><br><input id="email" required type="email" placeholder="Enter your email"> 
+      <br>
+      <br>
+      <label for="Phone-Number" id="number-label">Phone:</label><br><input id="number" type="number" placeholder="Code" value="country-code" min=1 max=3><input type="number" value="number" placeholder="Enter your mobile no."><br><br>
+      <label for="Preferences" id="DropDown">Select your preferences for your personal chat bot to be like:</label><br>
+      <select required id="dropdown">
+        <option value="Friendly">Friendly</option>
+        <option value="Seductive">Seductive</option>
+        <option value="Wise">Wise</option>
+        <option value="Nerd">Nerd</option>
+        <option value="Robotic">Robotic</option>
+        <option value="Romantic">Romantic</option>
+        <option value="Competitive">Competitive</option>
+        <option value="Rude">Rude</option>
+        <option value="Funny">Funny</option></select><br><br>
+    <br><fieldset required><legend>Choose the prefered gender of your bot:</legend><input id="gender1" type="radio" name="gender" value="female"><label for="female">Female</label><br>
+      <input id="gender2" type="radio" name="gender" value="male"><label for="male">Male</label><br>
+      <input id="gender3" type="radio" name="gender" value="genderless"><label for="genderless">Genderless</label>
+      </fieldset>
+       <br><fieldset><legend>Select the genres you would want to discuss with your bot:</legend><input id="genre1" type="checkbox" name="genre" value="movies"><label for="movies">Movies</label><br>
+      <input id="genre2" type="checkbox" name="genre" value="relationships"><label for="relationships">Relationships</label><br>
+      <input id="genre3" type="checkbox" name="genre" value="sex"><label for="sex">Sex</label><br>
+         <input id="genre4" type="checkbox" name="genre" value="general"><label for="general">General</label><br>
+         <input id="genre5" type="checkbox" name="genre" value="science"><label for="science">Science</label><br>
+         <input id="genre6" type="checkbox" name="genre" value="psycho"><label for="psycho">Psychological Issues</label>
+         
+      </fieldset>
+      <br>
+        <label for="additional-comments">Give us some additional features you would like to add to your personal Bot!</label><br><textarea required cols="70" rows="10"id="textarea" minlength=10 maxlength=500 placeholder="You free to describe your preferences without limit and your secrets are safe with us!"></textarea><br><button id="submit" type="submit" title="submit">Ready to Go!</button>
+    </form>
+  </main>
+</html>
